@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(139, 194, 139);
+}
+h1{
+    color: rgb(10, 15, 10);
+}
+td{
+    border: 1px solid black;
+    padding: 10px;
+}
+th{
+    border: 1px solid black;
+    padding: 10px;
+    font-size: 20px;
+
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+    width: 100%;
+}
+thead{
+    font-weight: bold;
+    background-color: rgb(43, 59, 43);
+color: white;
+}
+tbody tr:hover{
+background-color: rgb(43, 59, 43);
+color: white;
+}
+tbody tr{
+    background-color: white;
+}
+a{
+    color: white;
+}
