@@ -5,11 +5,95 @@
 <head>
     <title>Ghibli Studio - About</title>
     <link rel="stylesheet"href="styles.css" >
+    <style>
+        body {
+            margin: 0;
+        }
 
+        .side-menu {
+            background-color: rgb(102, 208, 102);
+            display: block;
+            height: 100%;
+            position: absolute;
+            font-size: 0;
+            left: -80px;
+        }
+        .side-menu:hover{
+            left: 0px;
+            transition: 0.3s;
+        }
+
+        .side-menu-item {
+            font-size: 15px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 50px;
+            position: relative;
+            cursor: pointer;
+
+        }
+
+        .side-menu-item:hover {
+            background-color: rgb(4, 44, 4);
+            color: white;
+        }
+
+        .dropdown {
+            width: 150px;
+            display: block;
+            background-color: rgb(102, 208, 102);
+            position: absolute;
+            left: 100%;
+            top: 0px;
+            display: none;
+        }
+
+        .side-menu-item:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown-item {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+            height: 45px;
+            white-space: nowrap;
+            color: black;
+        }
+
+        .dropdown-item:hover {
+            background-color: rgb(4, 44, 4);
+            color: white;
+            text-decoration: none;
+
+        }
+        .dropdown-item a{
+            text-decoration: none;
+        }
+        .side-menu-item a{
+            text-decoration: none;
+        }
+
+     
+    </style>
 </head>
 
 <body>
+    <div class="side-menu">
+        <div class="side-menu-item">Ghibli
+            <div class="dropdown">
+                <div class="dropdown-item"><a href="index.html">Home</a></div>
+                <div class="dropdown-item"><a href="movies.html">Movies</a></div>
+                
 
+            </div>
+        </div>
+        <div class="side-menu-item"><a href="checkers.html">Checkers</a> </div> 
+      
+    </div>
     <h1 style="text-align: center;">About Ghibli Studio</h1>
 
     <a href="index.html">Home Page</a> <br>
@@ -19,7 +103,7 @@
 
         <img src="howl.png" height="300px" width="900px">
 
-        <p style="text-align: center;">
+        <p style="text-align: center;position: absoulte; margin-left: 100px;" >
             Studio Ghibli Inc. (Japanese: 株式会社スタジオジブリ, Hepburn: Kabushiki-gaisha Sutajio Jiburi) is a Japanese animation
             film studio headquartered in Koganei, Tokyo.[1] The studio is best known for its animated feature films, and
             has also produced several short films, television commercials, and one television film. The studio's mascot
@@ -40,6 +124,7 @@
             February 2017, Suzuki announced that Miyazaki had come out of retirement again to direct a new feature film,
             How Do You Live?.
         </p>
+        
 
     </div>
 
