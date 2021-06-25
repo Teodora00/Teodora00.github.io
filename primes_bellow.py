@@ -1,5 +1,5 @@
 def is_prime(n):
-    if n < 1:
+    if n <= 1:
         return False
     elif n >= 1:
          for x in range (2, n):
