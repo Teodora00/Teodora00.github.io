@@ -1,58 +1,52 @@
+from typing import Text
 from flask import Flask, render_template
 
-app = Flask(__name__)
-
+app = Flask(__name__ , template_folder='templates')
 
 @app.route("/")
 def start():
-    title = "The Haunted House"
-    
-    text = """It is a dark and cold night and the moon is full. You walk up to the haunted house.  
-    As you approach the door, it creaks open and a chill runs down your spine!"""
+    title = "Forest"
 
+    text = """Snowflakes fell from the dark, chilly sky. You stumble upon a dark forest. Suddenly you hear a loud howl from the forest!
+      """
+      
     choices = [
-        ('enter_house',"Go inside"),
-        ('run_away',"Run away as fast as you can!!!")
-    ]
+        ('enter_forest',"Enter forest"),
+        ('run_away',"Turn around and run!")
 
-    return render_template('adventure.html', title=title, text=text, choices=choices)
-
+    ]  
+    return render_template('adventures.html', title=title , text=text , choices=choices) 
 
 
 @app.route("/inside")
-def enter_house():
-    title = "You go inside..."
-    
-    text = """... and the door slams shut behind you!  And then -- absolute silence.  It is so quiet you can hear the 
-    sound of your own heart beating.  A dusty wooden staircase leads up to the second floor.  Through a tangle of cobwebs
-    you can see the faint, flickering light of a small candle."""
+def enter_forest():
+    title = "You entered the forest..."
+
+    text = """ ... there is not much to see at first, only snow and trees. You come across a sign, but can`t clearly tell what it says. You clean it up, and realize it says DANGER. You need to decide to go ahead or not."""
 
     choices = [
-        ('up_stairs',"Go up the stairs"),
-        ('run_away',"Try to escape out the front door")
+        ('go_ahead', "Continue"),
+        ('run_away', "Turn around and run")
     ]
+    return render_template('adventures.html', title=title , text=text , choices=choices) 
 
-    return render_template('adventure.html', title=title, text=text, choices=choices)
 
 @app.route("/escape")
 def run_away():
     title = "You run away!"
-    
-    text = """You bolt away from the house to safety.  You hear the sound of a sinister voice cackling madly behind you."""
+
+    text = """ You turn around and run as fast as you can! You hear one more howl, louder than the last one. """
 
     choices = []
 
-    return render_template('adventure.html', title=title, text=text, choices=choices)
+    return render_template('adventures.html', title=title , text=text , choices=choices) 
 
-
-
-@app.route("/stairs")
-def up_stairs():
+@app.route("/continue")
+def go_ahead():
     title = "Look out!"
-    
-    text = """As you climb the stairs, a sea of spiders rains down on you from the cobwebs.  You feel the excruciating bites of 
-    ten thousand tiny fangs as they eat you alive."""
+
+    text = """" As you continue walking, you start seeing blood all around you in the snow. You look up and see a big wolf. You look into his eyes, and that is the last thing you see."""
 
     choices = []
 
-    return render_template('adventure.html', title=title, text=text, choices=choices)
+    return render_template('adventures.html', title=title, text=text, choices=choices)
