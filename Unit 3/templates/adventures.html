@@ -25,6 +25,10 @@
             max-width: 800px;
             margin: 100px auto;
         }
+        img{
+            height: 400px;
+            width: 700px;
+        }
     </style>
 </head>
 
@@ -34,10 +38,11 @@
 
         <p>{{ text }}</p>
 
+        <img src= "{{picture_url}}">
 
         {% if choices %}
 
-            <p>What do you do?</p>
+           <p>What do you do?</p>
 
             <ul>
                 {% for (page_name, choice) in choices %}
