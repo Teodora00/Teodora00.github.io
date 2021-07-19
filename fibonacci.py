@@ -1,17 +1,13 @@
-def fibonacci_list(l):
-    a = 0
-    b = 1
-    while True:
-        a, b = b, a+b
-        l.append(b)
 
 def big_fibonacci (n):
-    l = []
-    fibonacci_list(l)
-    for x in l:
-        if len(str(x)) == n:
-            first = x
-            return print(first)
+    a = 0
+    b = 0
+    x = 1
+    while  len(str(x)) != n:
+        b = a
+        a = x
+        x = a + b 
+    print(x)
        
 
 big_fibonacci(2)
