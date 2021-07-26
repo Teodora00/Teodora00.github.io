@@ -1,0 +1,20 @@
+STORY: A new dog can sign up for the app
+1. Suppose a dog is new to the app and doesn`t have an account, they need to make one.
+2. The dog enters information like username (that needs to be unique), dog`s name, email, password, and the dog`s birthday.
+3. Once they click the button, their account is made if they entered all information.
+
+STORY: A dog can send friend requests
+1. Suppose a dog is logged in, and viewing another dog`s profile.
+2. When the dog presses a button that says "Send request", the button changes to "Request sent" and we wait for the reply.
+3. Once the other dog accepts our request, the button changes to "Unfriend".
+
+STORY: A dog can search places
+1. Suppose a dog is logged in and has a map opened.
+2. They can filter which locations they are looking for (ex. dog parks, vets, grooming...)
+3. Once they click the "search" button, the locations nearby will be shown on the map
+4. Below the map there will be a list of all these places, their rating, and how far away they are from the dog`s location
+ 
+NEW VIEWS:
+- Sign-up page
+- Profile page
+- Map 
