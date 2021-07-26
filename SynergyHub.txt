@@ -1,0 +1,17 @@
+STORY: Asignee can inpute a time estimate (in hours) for their own task
+
+1. From a task list, the asignee can click on a task and see the task in detail.
+2. The asignee can click on a button to edit the task.
+3. Then they can input a time estimate (in hours), and click on a button to confirm it.
+4. The task is updated, and now shows a time estimate.
+
+STORY: A manager can set the priority of a task
+1.From the task list, a manager can click a task to see the task in detail.
+2. The manager can click on a button to edit the task.
+3. The manager can selectthe priority of a task from a dropdown menu.
+4. After clicking on a button to save the changes, the task is updated.
+
+
+NEW VIEWS:
+- Time estimate page
+- Change priority page
