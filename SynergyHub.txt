@@ -12,6 +12,8 @@ STORY: A manager can set the priority of a task
 4. After clicking on a button to save the changes, the task is updated.
 
 
-NEW VIEWS:
+VIEWS:
 - Time estimate page
 - Change priority page
+- Task list
+- Task details
