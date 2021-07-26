@@ -1,6 +1,6 @@
 STORY: A new dog can sign up for the app
 1. Suppose a dog is new to the app and doesn`t have an account, they need to make one.
-2. The dog enters information like username (that needs to be unique), dog`s name, email, password, and the dog`s birthday.
+2. The dog enters information like username (that needs to be unique), dog`s name, email, password, dog`s gender, and the dog`s birthday.
 3. Once they click the button, their account is made if they entered all information.
 
 STORY: A dog can send friend requests
